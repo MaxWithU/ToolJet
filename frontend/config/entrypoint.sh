@@ -13,5 +13,6 @@ if [ ! -f /etc/fallback-certs/resty-auto-ssl-fallback.crt ]; then
     -keyout /etc/fallback-certs/resty-auto-ssl-fallback.key \
     -out /etc/fallback-certs/resty-auto-ssl-fallback.crt
 fi
-
+# pm2 start server/dist/src/main
+node server/dist/src/main.js
 exec "$@"

@@ -56,5 +56,4 @@ COPY --from=builder /app/plugins/package.json ./app/plugins/package.json
 COPY --from=builder /app/server ./app/server
 
 WORKDIR /app
-
-ENTRYPOINT ["./server/entrypoint.sh"]
+# ENTRYPOINT ["./server/entrypoint.sh"]
