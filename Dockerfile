@@ -1,4 +1,4 @@
-FROM tooljet/tooljetce
+FROM tooljet/tooljet-ce
 
 # Fix for JS heap limit allocation issue
 # ENV NODE_OPTIONS="--max-old-space-size=4096"
